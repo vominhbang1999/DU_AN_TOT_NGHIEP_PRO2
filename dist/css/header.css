@@ -1,0 +1,258 @@
+html, body {
+    background-color: #182434;
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif !important; }
+  
+  @media print {
+    .container {
+      width: auto; } }
+  
+  header {
+    background-color: #192536 !important;
+    position: relative;
+    height: 110px;
+    width: 100%;
+    z-index: 999;
+   }
+    header .header-main {
+      background-color: #192536 !important;
+      height: 110px;
+      width: 100%;
+      position: fixed;
+      transition: all 0.6s ease-in-out;
+      padding: 0% 5%;
+      left: 0;
+      right: 0; }
+      @media (min-width: 1300px) {
+        header .header-main .header-main {
+          padding: 0% 8% !important; } }
+      @media (min-width: 1400px) {
+        header .header-main .header-main {
+          padding: 0% 15% !important; } }
+      @media (min-width: 1500px) {
+        header .header-main .header-main {
+          padding: 0% 25% !important; } }
+      header .header-main .logo-web-main {
+        display: flex; }
+        header .header-main .logo-web-main a.header-logo {
+          background-image: url("../img/logo.png");
+          background-repeat: no-repeat;
+          width: 122px;
+          height: 36px;
+          display: block;
+          font-size: 0;
+          z-index: 2;
+          transition: transform 0.6s;
+          margin-top: 0.5rem; }
+      header .header-main .header-sub-user, header .header-main .header-sub-search {
+        display: none; }
+        header .header-main .header-sub-user i, header .header-main .header-sub-search i {
+          font-size: 25px;
+          color: #ffffff96; }
+      header .header-main .before-header-list {
+        visibility: unset;
+        margin-top: 1rem; }
+        header .header-main .before-header-list:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: #141d29;
+          position: absolute;
+          left: 0; }
+      header .header-main .header-list {
+        margin-top: 1.5rem;
+        transition: all 0.6s ease-in-out; }
+        header .header-main .header-list li.nav-item a.nav-link {
+          font-size: 95%;
+          color: #829799;
+          display: flex;
+          font-weight: 400; }
+        header .header-main .header-list li.nav-item:hover .sub-menu {
+          display: block; }
+        @media (max-width: 900px) {
+          header .header-main .header-list .hide-header-list {
+            display: block !important; } }
+        header .header-main .header-list .menuvip, header .header-main .header-list .makhuyenmai {
+          background-image: url("../img/icon-vip.png");
+          width: 20px;
+          height: 14px;
+          display: block;
+          background-repeat: no-repeat;
+          margin-top: 3px; }
+        header .header-main .header-list .sub-menu {
+          position: absolute;
+          background-color: white;
+          display: none; }
+          header .header-main .header-list .sub-menu .col-sub-menu {
+            width: 170px;
+            padding: 0; }
+            header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu {
+              list-style-type: none;
+              padding-left: 0; }
+              header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu li.nav-item {
+                border-bottom: 1px solid #0000001a; }
+                header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu li.nav-item a.nav-link {
+                  font-size: 14px;
+                  color: #333;
+                  font-weight: 500;
+                  font-family: "segoe ui",Helvetica,Arial,sans-serif !important; }
+                  header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu li.nav-item a.nav-link:hover {
+                    color: #21b685; }
+              header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu .title-sub-menu {
+                border-bottom: 0px solid black !important; }
+                header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu .title-sub-menu a.nav-link {
+                  font-size: 16px;
+                  color: #333;
+                  text-transform: uppercase;
+                  font-weight: 500; }
+                  header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu .title-sub-menu a.nav-link:hover {
+                    color: #21b685; }
+        header .header-main .header-list .makhuyenmai {
+          background-image: url("../img/gift-2.png") !important; }
+      header .header-main .header-search {
+        position: relative;
+        width: 400px;
+        transform: translate(50%, -234%);
+        transition: transform 0.6s; }
+        header .header-main .header-search label {
+          background-image: url("../img/search-btn.png");
+          background-repeat: no-repeat;
+          display: block;
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          right: 1rem;
+          top: 0.5rem; }
+        header .header-main .header-search .header-form-sub-search {
+          display: none; }
+          header .header-main .header-search .header-form-sub-search a.nav-link {
+            text-align: end; }
+            header .header-main .header-search .header-form-sub-search a.nav-link i {
+              font-size: 20px;
+              color: white; }
+        header .header-main .header-search input {
+          font-family: "Roboto", "segoe ui", Helvetica, Arial, sans-serif !important; }
+      header .header-main .header-user, header .header-main .header-sachvideo {
+        transform: translate(500%, -480%);
+        width: 200px;
+        transition: all 0.6s ease-in-out; }
+        @media (max-width: 1280px) {
+          header .header-main .header-user, header .header-main .header-sachvideo {
+            transform: translate(430%, -480%); } }
+        header .header-main .header-user .icon-dangnhap-dangky li.nav-item, header .header-main .header-sachvideo .icon-dangnhap-dangky li.nav-item {
+          margin-top: 2rem; }
+          header .header-main .header-user .icon-dangnhap-dangky li.nav-item i, header .header-main .header-sachvideo .icon-dangnhap-dangky li.nav-item i {
+            font-size: 30px; }
+        header .header-main .header-user a.nav-link, header .header-main .header-sachvideo a.nav-link {
+          font-size: 14px;
+          font-weight: 500;
+          color: white;
+          padding: 0.5rem; }
+      header .header-main .header-sachvideo {
+        transform: translate(340%, -380%); }
+      header .header-main .header-form-search-responsive {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #32445e;
+        display: none; }
+        @media (min-width: 1176px) {
+          header .header-main .header-form-search-responsive {
+            display: none !important; } }
+        header .header-main .header-form-search-responsive form.form-inline {
+          justify-content: center;
+          height: 45px; }
+          header .header-main .header-form-search-responsive form.form-inline .thoat-form {
+            font-size: 16px;
+            color: #cad7ea; }
+          header .header-main .header-form-search-responsive form.form-inline .form-group {
+            width: 85%;
+            margin: 0; }
+            @media (max-width: 900px) {
+              header .header-main .header-form-search-responsive form.form-inline .form-group {
+                width: 70%; } }
+            @media (max-width: 800px) {
+              header .header-main .header-form-search-responsive form.form-inline .form-group {
+                width: 60%; } }
+            header .header-main .header-form-search-responsive form.form-inline .form-group input#header-search-menu-responsive {
+              width: 100%;
+              border-radius: 25px;
+              border: 1px solid #5f7494;
+              background-color: #5f749400;
+              height: 30px; }
+          header .header-main .header-form-search-responsive form.form-inline button {
+            padding: 0.2rem 0.5rem;
+            border-radius: 25px;
+            background-color: #21b685;
+            border: 1px solid #21b685;
+            font-size: 15px; }
+  
+  .anime-header-main {
+    margin-top: -3.5rem; }
+  
+  .anime-header-search-transform {
+    transform: translate(360%, -110%) !important; }
+  
+  .anime-header-search-width {
+    width: 210px !important; }
+  
+  .anime-header-user {
+    transform: translate(500%, -210%) !important;
+    width: 200px !important; }
+  
+  @media (max-width: 1280px) {
+    .header-sachvideo {
+      visibility: hidden !important; }
+    .header-user {
+      transform: translate(430%, -480%); } }
+  
+  @media (max-width: 1176px) {
+    .header-form-sub-search {
+      display: block !important; }
+    .icon-dangnhap-dangky i {
+      font-size: 23px !important; }
+    .anime-header-search-transform {
+      transform: translate(370%, -110%) !important; } }
+    @media (max-width: 1176px) and (max-width: 1116px) {
+      .anime-header-search-transform {
+        transform: translate(330%, -110%) !important; } }
+  
+  @media (max-width: 1100px) {
+    .header-user {
+      transform: translate(330%, -480%) !important; }
+    .anime-header-search-transform {
+      transform: translate(320%, -110%) !important; } }
+  
+  @media (max-width: 900px) {
+    .header-search, .header-user, .header-sachvideo {
+      display: none !important; }
+    .header-sub-user, .header-sub-search {
+      display: block !important; }
+    .hide-header-list {
+      visibility: unset !important; }
+    .owl-item {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .before-header-list {
+      visibility: unset !important; }
+    .anime-header-main {
+      margin-top: 0rem !important; }
+    .logo-menu a {
+      transform: translate(10px, 0px) !important; }
+    .header-list {
+      margin-left: 0px !important;
+      margin-top: 1.5rem !important; } }
+  
+  .user-scroll-window {
+    transform: translate(450%, -210%) !important; }
+  
+  @media (max-width: 1000px) {
+    .anime-header-search-transform {
+      transform: translate(280%, -90%) !important; }
+    .user-scroll-window {
+      transform: translate(400%, -200%) !important; } }
+  

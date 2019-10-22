@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="./css/footer.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- ++++++++++++++ FAVICON ++++++++++++++ -->
+    <link rel="icon" href="./img/favicon.ico" type="image/ico" sizes="16x16">
+    <!-- ++++++++++++++ FAVICON ++++++++++++++ --> 
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+ <!-- ++++++++++++++ Header ++++++++++++++ -->
+ <header>
+        <div class="container">
+          <div class="row">
+            <div class="header-main">
+              <div class="logo-web-main">
+                <div class="logo-menu"><a class="header-logo logo-menu" href="index.html">nhac.vn</a></div>
+                <div class="mr-auto"></div>
+                <div class="header-sub-search"><a class="nav-link" href="#1"><i class="fa fa-search"></i></a>
+                  <div class="show-box-sub-search"></div>
+                </div>
+                <div class="header-sub-user"><a class="nav-link" href="#1"><i class="fa fa-user-circle-o"></i></a>
+                  <div class="show-box-sub-user"></div>
+                </div>
+              </div>
+              <div class="before-header-list"></div>
+              <div class="header-list">
+                <ul class="nav">
+                  <li class="nav-item item"><a class="pl-0 nav-link" href="#1">Bài hát</a></li>
+                  <li class="nav-item item"><a class="nav-link" href="#1">Chủ đề </a></li>
+                  <li class="nav-item item"><a class="nav-link" href="#1">BXH</a>
+                    <div class="sub-menu">
+                      <div class="row">
+                        <div class="col col-sub-menu">
+                          <ul class="list-sub-menu pl-3">
+                            <li class="nav-item title-sub-menu"><a class="nav-link" href="#1">Việt Nam</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#1">Bài Hát</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#1">Album</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#1">Video</a></li>
+                          </ul>
+                        </div>
+                        <div class="col col-sub-menu">
+                          <ul class="list-sub-menu">
+                            <li class="nav-item title-sub-menu"><a class="nav-link" href="#1">Âu Mĩ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#1">Bài Hát</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#1">Album</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#1">Video</a></li>
+                          </ul>
+                        </div>
+                        <div class="col col-sub-menu">
+                          <ul class="list-sub-menu">
+                            <li class="nav-item title-sub-menu"><a class="nav-link" href="#1">Hàn Quốc</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#1">Bài Hát</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#1">Album</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#1">Video</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item item"><a class="nav-link" href="#1">Album</a></li>
+                  <li class="nav-item item"><a class="nav-link" href="#1">MV</a></li>
+                  <li class="nav-item item"><a class="nav-link" href="#1">Nghệ sĩ</a></li>
+                  <li class="nav-item item"><a class="nav-link" href="#1">Hóng sao</a></li>
+                  <li class="nav-item hide-header-list item"><a class="nav-link" href="#1"> <span class="menuvip"></span><span>VIP</span></a></li>
+                  <li class="nav-item hide-header-list item"><a class="nav-link" href="#1"> <span class="makhuyenmai"></span><span>Mã khuyến mãi</span></a></li>
+                </ul>
+              </div>
+              <div class="header-search">
+                <form action="">
+                  <div class="form-group">
+                    <label for="header-search"></label>
+                    <input class="form-control" id="header-search" type="email" aria-describedby="emailHelp" placeholder="Từ khóa tìm kiếm...">
+                  </div>
+                </form>
+              </div>
+              <div class="header-sachvideo">
+                <ul class="nav">
+                  <li class="nav-item item"><a class="nav-link" href="#1">Video</a></li>
+                  <li class="nav-item item"><a class="nav-link" href="#1">|</a></li>
+                  <li class="nav-item item"><a class="nav-link" href="#1">Sách</a></li>
+                </ul>
+              </div>
+              <div class="header-user">
+                <ul class="nav">
+                  <li class="nav-item item"><a class="nav-link" href="#1">Đăng nhập</a></li>
+                  <li class="nav-item item"><a class="nav-link" href="#1">/</a></li>
+                  <li class="nav-item item"><a class="nav-link" href="#1">Đăng ký</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ++++++++++++++ End Header ++++++++++++++ -->
+
+    <!-- phần content -->
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <!-- tin nóng -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="clearfix">
+                            <div class="float-left title">
+                                <a href="#">
+                                    <h3>Tin nóng</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="near-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-image">
+                                <a href="#">
+                                    <img src="img/tinnong.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text">
+                                <div class="title-text">
+                                    <a href="#">
+                                        <h3>Hà Anh Tuấn - chàng trai “bình thường” với gu âm nhạc chưa bao giờ tầm thường</h3>
+                                    </a>
+                                </div>
+                                <div class="detail-text">
+                                    <p>"Chúng ta không cần là một người giỏi văn để có thể trở thành một người viết truyện…" - Hà Anh Tuấn đã chia sẻ như vậy vào đêm diễn Gấu tại Đà Lạt năm ngoái. Hình ảnh 5.000 khán giả che dù dưới mưa bay của Đà Lạt vẫn
+                                        chưa phai mờ thì năm nay, người yêu “những nỗi buồn đẹp trong tình yêu” của nam ca sĩ lại đắm mình trong buổi hòa nhạc đúng sở trường lãng mạn mang tên Truyện Ngắn.</p>
+                                </div>
+                                <a href="#" class="view-detail">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-hongsao">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box-detail">
+                        <div class="box-image">
+                            <a href="#">
+                                <img src="img/tinnong.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                <a href="#">
+                                Hà Anh Tuấn - chàng trai “bình thường” với gu âm nhạc chưa bao giờ tầm thường</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-detail">
+                        <div class="box-image">
+                            <a href="#">
+                                <img src="img/tinnong1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                <a href="#">
+                                    Thanh toán gói VIP Nhac.vn bằng Ví MoMo, hoàn tiền giá trị</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-detail">
+                        <div class="box-image">
+                            <a href="#">
+                                <img src="img/tinnong2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                <a href="#">
+                                    DTAP, bộ ba nhà sản xuất trẻ “vẽ” thành công của nhạc phim Anh Thầy Ngôi Sao</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-hongsao">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box-detail">
+                        <div class="box-image">
+                            <a href="#">
+                                <img src="img/tinnong3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                <a href="#">
+                                    “Bài Ca Tôm Cá” - câu hò tiếp năng lượng cho hành trình theo đuổi đam mê</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-detail">
+                        <div class="box-image">
+                            <a href="#">
+                                <img src="img/tinnong4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                <a href="#">
+                                    Senorita – Một bài hát “khôn ngoan” cho cả Shawn Mendes và Camila Cabello</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-detail">
+                        <div class="box-image">
+                            <a href="#">
+                                <img src="img/tinnong5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                <a href="#">
+                                    Âm nhạc - Bạn đồng hành của những chuyến đi</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-hongsao">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box-detail">
+                        <div class="box-image">
+                            <a href="#">
+                                <img src="img/tinnong6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                <a href="#">
+                                    ‘Hương Thời Gian’ - Bản ballad ngọt ngào của Nguyễn Phi Hùng</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-detail">
+                        <div class="box-image">
+                            <a href="#">
+                                <img src="img/tinnong7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                <a href="#">
+                                    Nguyễn Phi Hùng, soái ca độc thân đa tài của làng showbiz Việt</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-detail">
+                        <div class="box-image">
+                            <a href="#">
+                                <img src="img/tinnong8.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="box-text">
+                            <p>
+                                <a href="#">
+                                    Lý giải "Hãy trao cho anh" - cơn sốt toàn cầu của Sơn Tùng M-TP</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- kết thúc phần content -->
+
+    <!-- START FOOTER -->
+    <footer>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class=" col-6 col-lg-3">
+                            <div class="wapper-ft">
+                                <ul>
+                                    <li class="top-list">
+                                        <a href="#">
+                                            Thông tin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Gioi thiệu
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Điều khoản sử dụng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Quyền riêng tư
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-6 col-lg-3">
+                            <div class="wapper-ft">
+                                <ul>
+                                    <li class="top-list">
+                                        <a href="#">
+                                            Bài hát
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            ALbum
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Hotlist
+                                        </a>
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-6 col-lg-2">
+                            <div class="wapper-ft">
+                                <ul>
+                                    <li class="top-list">
+                                        <a href="#" class="text-uppercase">
+                                            bxh
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-uppercase">
+                                            mv
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Ngệ sĩ
+                                        </a>
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-6 col-lg-4">
+                            <div class="wapper-ft">
+                                <ul>
+                                    <li class="top-list">
+                                        <a href="team.html">
+                                            Kết nối với team 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure></figure>
+                                            <img src="./img/icon-fb-bottom.png" alt="" class="img-fluid">
+                                            </figure>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="wapper-ft">
+                                <ul>
+                                    <li class="top-list">
+                                        <a href="#" class="">
+                                            Tải ứng dụng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="">
+                                            Dịch vụ nhac.vn đã có ứng dụng cho
+                                        </a>
+                                    </li>
+                                    <li class="mobile-mb">
+                                        <a href="#">
+                                            Mobile, Smart TV
+                                        </a>
+                                    </li>
+                                    <li class="d-flex">
+                                        <figure>
+                                            <img src="./img/icon-code-bottom.png" alt="">
+                                        </figure>
+                                        <div class="list-dr">
+
+                                            <button class="btn">
+                                                <img src="./img/btn-down-iphone (1).png" alt="">
+                                                Tải cho i phone
+                                            </button>
+                                            <button class="btn">
+                                                <img src="./img/btn-down-android.png" alt="">
+                                                Tải cho Androi
+                                            </button>
+                                        </div>
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="wapper-ft">
+                                <ul>
+                                    <li class="top-list">
+                                        Từ khóa nổi bật
+                                    </li>
+                                    <li>
+                                        Yêu Em Dại Khờ, Những Bài Hát Hay Nhất
+                                    </li>
+                                    <li>
+                                        Mùa xuân, Tình nhân ơi , Anh ỡ đâu
+                                    </li>
+                                    <li>
+                                        Anh chưa từng
+                                    </li>
+                                    <li class="top-list cx">
+                                        liên kết
+                                    </li>
+                                    <li>
+                                        <a href="https://hopamchuan.com/"> Hopamchuan.com </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end -->
+            <div class="row">
+                <div class="col-lg-2">
+                    <figure>
+                        <img src="./img/bottom-logo.png" alt="" class="img-fluid">
+                    </figure>
+                </div>
+                <div class="col-lg-8">
+                    <figcaption>
+                        <span>
+                            Cơ quan chủ quản Công ty Cổ phần Bạch Minh - Địa chỉ: P804, Tòa nhà VET, 98 Hoàng Quốc Việt,
+                            Hà Nội
+                        </span>
+                        <span>
+                            Email: Nhac@vega.com.vn Tel: 024 37554190 - Người chịu trách nhiệm nội dung: Ông Lê Hữu Toàn
+                        </span>
+                        <span>
+                            Giấy phép MXH số 311/GP-BTTTT do Bộ Thông Tin và Truyền thông cấp ngày 04/07/2017
+                        </span>
+                    </figcaption>
+
+                    <div class="yearr" style="font-size: 14px">
+                        © 2015 Vega Corporation
+                    </div>
+                </div>
+                <div class="col-lg-2 hidden-mobile">
+                    <figure class="cv">
+                        <img src="./img/dathongbao.png" alt="" class="img-fluid">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!-- eeeeeeeeeeeeeee -->
+
+
+
+        <!-- eeeeeeeeeeeeeee -->
+
+        <section class="nutgooen">
+            <div class="goo">
+                <div class="goo__wrapper">
+                    <button class="goo__toggler">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <ul class="goo__list">
+                        <li class="goo__item">
+                            <button class="goo__btn goo__btn--1">
+                                <i class="fas fa-home"></i>
+                            </button>
+                        </li>
+                        <li class="goo__item">
+                            <button class="goo__btn goo__btn--2">
+                                <i class="fas fa-users"></i>
+                            </button>
+                        </li>
+                        <li class="goo__item">
+                            <button class="goo__btn goo__btn--3">
+                                <i class="fas fa-bars"></i>
+
+
+                            </button>
+                        </li>
+                        <li class="goo__item">
+                            <button class="goo__btn goo__btn--4 ">
+                                <i class="fas fa-arrow-up"></i>
+
+
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <svg xmlns="#" version="1.1">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                            result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                </defs>
+            </svg>
+        </section>
+
+    </footer>
+    <!-- END FOOTER -->
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+.bxh{
+
+}
+body{
+    background:  linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+}
+.bxh .bxh-wwrapper .boxtitle{
+    display: flex;
+}
+.bxh .bxh-wwrapper .boxtitle h2{
+    color: #fff;
+}
+.box-nav{
+    margin-left: 15px;
+}
+.box-nav .nav.nav-tabs{
+    border-bottom: 0px solid #dee2e6;
+}
+.box-nav .nav.nav-tabs .nav-item .nav-link{
+    color: gray;
+}
+.box-nav .nav.nav-tabs .nav-item .nav-link.active{
+    background: none;
+    border: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.box-nav .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border: none;
+    
+}
+.dropdown.show .dropdown-item{
+    color: black;
+}
+.box-content .box-des{
+    
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0 10px 0;
+}
+.box-left a#dropdownMenuLink:focus{
+    box-shadow: none;
+}
+.box-left .dropdown{
+    display: inline-block;;
+}
+
+.box-left .dropdown a {
+    width: 150px;
+    height: 33.99px;
+    
+    text-align: left;
+   
+}
+
+.play-app{
+    background: #303b4a;;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.play-app .box-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-app .box-right ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+.play-app .box-right ul li:first-child{
+    padding-right: 15px;
+}
+.play-app a{
+    color: #fff;
+}
+.play-app a i{
+    color: gray;
+}
+.play-app a:hover{
+    text-decoration: none;
+}
+.bxh-song-list{
+    
+    list-style-type: none;;
+}
+.bxh-song-list .song{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray ;
+}
+.bxh-song-list .song .song-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+.bxh-song-list .song:first-child .song-left .number{
+    color: #f60;
+}
+.bxh-song-list .song:nth-child(2) .song-left .number{
+    color: #f60;
+}
+.bxh-song-list .song:nth-child(3) .song-left .number{
+    color: #f60;
+}
+.bxh-song-list .song .song-left .number{
+    color: #fff;
+}
+.song-left .over-chat{
+    text-align: center;
+}
+.song-left .over-chat .order-num{
+    color: gray;
+}
+
+.song-left .over-chat .oder{
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 9px solid #0ba14b;
+    background: none;
+}
+.bxh-song-list .song .song-left figcaption a:hover{
+    text-decoration: none;;
+}
+.bxh-song-list .song .song-left figcaption h3{
+    font-size: 14px;
+    padding-top:14px ;
+}
+.bxh-song-list .song .song-left figcaption h3 a{
+    color: gray;
+}
+.bxh-song-list .song .song-left figcaption p a{
+    color: gray;
+}
+.bxh-song-list .song .song-left figcaption p{
+    font-size: 13px;
+}
+
+.bxh-song-list .song .song-left figure{
+    width: 57px;
+    height: 57px;
+    margin-bottom: 0;
+   
+
+}
+.bxh-song-list .song .list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bxh-song-list .song .list-icon ul{
+    display: flex;
+    list-style-type: none;;
+}
+.bxh-song-list .song .list-icon ul li{
+    padding-right: 20px;
+}
+.bxh-song-list .song .list-icon ul li i{
+    color: #fff;
+}
+.logo{
+   
+}
+@media (max-width: 991.98px) { 
+
+    .bxh figure img{
+        width: 100%;
+    }
+}
+@media (max-width: 1199.98px) { 
+    .bxh-song-list .song .song-left{
+        width: 40%;
+    }
+ }
+ @media (max-width: 767.98px) { 
+    .bxh-song-list .song .song-left{
+        width: 60%;
+    }
+    .box-nav .nav.nav-tabs{
+        display: flex;
+        flex-direction: column;
+    }
+.bxh .boxtitle h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  }
+
+  @media (max-width: 575.98px) { 
+    .bxh .boxtitle h2{
+        width: 50%;
+    }
+   }
+
+
+
+ @media (max-width: 400px) { 
+    .bxh-song-list .song .song-left{
+        width: 70%;
+    }
+    .bxh-song-list .song .list-icon ul li{
+       padding-right: 8px;
+    }
+  }
+
+
+
