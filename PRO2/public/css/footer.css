@@ -1,0 +1,178 @@
+footer {
+    background: #21324a;
+    color: #fff;
+    font-family: Averta-Light;
+    padding: 20px 0;
+    margin-top: 4rem;
+}
+
+footer .wapper-ft ul {
+    list-style-type: none
+}
+
+footer .wapper-ft ul li {
+    font-size: 13px;
+    text-shadow: 1px 1px 2px #333
+}
+
+footer .wapper-ft ul li a {
+    color: white !important
+}
+
+footer .wapper-ft ul li a:hover {
+    text-decoration: none
+}
+
+footer .wapper-ft ul li.top-list {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: none
+}
+
+footer .wapper-ft ul li .list-dr {
+    display: flex;
+    flex-direction: column
+}
+
+footer .wapper-ft ul li .list-dr button {
+    width: 153px;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    background: #21b685;
+    color: #fff;
+    font-family: Averta-Light;
+    font-size: 12px;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 53px;
+    text-align: left;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 2
+}
+
+@media (min-width:992px) {
+    footer .wapper-ft ul li .list-dr button {
+        background: #21b685ad
+    }
+
+    footer .wapper-ft ul li .list-dr button::before,
+    footer .wapper-ft ul li .list-dr button::after {
+        background: #21b685;
+        content: '';
+        position: absolute;
+        z-index: -1
+    }
+
+    footer .wapper-ft ul li .list-dr button,
+    footer .wapper-ft ul li .list-dr button::after {
+        transition: all 0.3s
+    }
+
+    footer .wapper-ft ul li .list-dr button::after {
+        height: 100%;
+        left: -35%;
+        top: 0;
+        transform: skew(50deg);
+        transition-duration: 0.6s;
+        transform-origin: top left;
+        width: 0
+    }
+
+    footer .wapper-ft ul li .list-dr button:hover:after {
+        height: 100%;
+        width: 135%
+    }
+}
+
+footer .wapper-ft ul li .list-dr button:focus {
+    box-shadow: none
+}
+
+footer .wapper-ft ul li .list-dr button img {
+    position: absolute;
+    top: 6px;
+    left: 13px
+}
+
+footer .wapper-ft ul li .list-dr button:nth-child(1) {
+    margin-bottom: 10px
+}
+
+footer .wapper-ft ul li figure {
+    margin-right: 10px
+}
+
+@media (min-width:768px) and (max-width:1199.98px) {
+    footer .wapper-ft ul li .list-dr button {
+        width: 140px
+    }
+}
+
+@media (max-width:991.98px) {
+    .mobile-mb {
+        margin-bottom: 10px
+    }
+}
+
+@media (min-width:576px) {
+    .top-list.cx {
+        margin-top: 26px
+    }
+}
+
+@media (min-width:992px) and (max-width:1199.98px) {
+    .top-list.cx {
+        margin-top: 8px
+    }
+}
+
+footer figcaption span {
+    display: block;
+    font-size: 14px
+}
+
+footer figcaption {
+    margin-bottom: 10px
+}
+
+@media (max-width:991.98px) {
+    footer .cv {
+        margin-top: 10px
+    }
+}
+
+@media (max-width:575.98px) {
+    footer .hidden-mobile {
+        display: none
+    }
+    .backtotop i {
+        display: none;
+    }
+    
+}
+@media (min-width:576px){
+    .backtotop img{
+        display: none;
+    }
+}
+
+
+.backtotop{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #141e30, #243b55);
+    position: fixed;
+    right: 40px;
+    bottom: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 200;
+    
+}

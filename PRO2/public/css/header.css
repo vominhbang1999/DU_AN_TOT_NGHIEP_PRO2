@@ -1,0 +1,1338 @@
+html, body {
+  background-color: #182434;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif !important;
+
+ }
+
+@media print {
+  .container {
+    width: auto; } }
+
+.cangiua {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cangiua {
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+
+header {
+  background-color: #192536 !important;
+  position: relative;
+  height: 110px;
+  width: 100%;
+  z-index: 9; }
+  header .header-main {
+    background-color: #21324a !important;
+    height: 110px;
+    width: 100%;
+    position: fixed;
+    transition: all 0.6s ease-in-out;
+    padding: 0% 5%;
+    left: 0;
+    right: 0;
+    
+
+     }
+    @media (min-width: 1300px) {
+      header .header-main .header-main {
+        padding: 0% 8% !important; } }
+    @media (min-width: 1400px) {
+      header .header-main .header-main {
+        padding: 0% 15% !important; } }
+    @media (min-width: 1500px) {
+      header .header-main .header-main {
+        padding: 0% 25% !important; } }
+    header .header-main .logo-web-main {
+      display: flex; }
+      header .header-main .logo-web-main a.header-logo {
+        background-image: url("../img/logo.png");
+        background-repeat: no-repeat;
+        width: 122px;
+        height: 36px;
+        display: block;
+        font-size: 0;
+        z-index: 2;
+        transition: transform 0.6s;
+        margin-top: 0.5rem; }
+    header .header-main .header-sub-user, header .header-main .header-sub-search {
+      display: none; }
+      header .header-main .header-sub-user i, header .header-main .header-sub-search i {
+        font-size: 25px;
+        color: #ffffff96; }
+    header .header-main .before-header-list {
+      visibility: unset;
+      margin-top: 1rem; }
+      header .header-main .before-header-list:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #141d29;
+        position: absolute;
+        left: 0; }
+    header .header-main .header-list {
+      margin-top: 1.5rem;
+      transition: all 0.6s ease-in-out; }
+      header .header-main .header-list li.nav-item a.nav-link {
+        font-size: 95%;
+        color: #829799;
+        display: flex;
+        font-weight: 400; }
+      header .header-main .header-list li.nav-item:hover .sub-menu {
+        display: block; }
+        @media (max-width: 950px) {
+          header .header-main .header-list li.nav-item:hover .sub-menu {
+            display: none; } }
+      @media (max-width: 900px) {
+        header .header-main .header-list .hide-header-list {
+          display: block !important; } }
+      header .header-main .header-list .menuvip, header .header-main .header-list .makhuyenmai {
+        background-image: url("../img/icon-vip.png");
+        width: 20px;
+        height: 14px;
+        display: block;
+        background-repeat: no-repeat;
+        margin-top: 3px; }
+      header .header-main .header-list .sub-menu {
+        position: absolute;
+        background-color: white;
+        display: none; }
+        header .header-main .header-list .sub-menu .col-sub-menu {
+          width: 170px;
+          padding: 0; }
+          header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu {
+            list-style-type: none;
+            padding-left: 0; }
+            header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu li.nav-item {
+              border-bottom: 1px solid #0000001a; }
+              header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu li.nav-item a.nav-link {
+                font-size: 14px;
+                color: #333;
+                font-weight: 500;
+                font-family: "segoe ui",Helvetica,Arial,sans-serif !important; }
+                header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu li.nav-item a.nav-link:hover {
+                  color: #21b685; }
+            header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu .title-sub-menu {
+              border-bottom: 0px solid black !important; }
+              header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu .title-sub-menu a.nav-link {
+                font-size: 16px;
+                color: #333;
+                text-transform: uppercase;
+                font-weight: 500; }
+                header .header-main .header-list .sub-menu .col-sub-menu .list-sub-menu .title-sub-menu a.nav-link:hover {
+                  color: #21b685; }
+      header .header-main .header-list .makhuyenmai {
+        background-image: url("../img/gift-2.png") !important; }
+    header .header-main .header-search {
+      position: relative;
+      width: 400px;
+      transform: translate(50%, -234%);
+      transition: transform 0.6s; }
+      header .header-main .header-search label {
+        background-image: url("../img/search-btn.png");
+        background-repeat: no-repeat;
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 1rem;
+        top: 0.5rem; }
+      header .header-main .header-search .header-form-sub-search {
+        display: none; }
+        header .header-main .header-search .header-form-sub-search a.nav-link {
+          text-align: left; }
+          header .header-main .header-search .header-form-sub-search a.nav-link i {
+            font-size: 20px;
+            color: white; }
+      header .header-main .header-search input {
+        font-family: "Roboto", "segoe ui", Helvetica, Arial, sans-serif !important; }
+    header .header-main .header-user, header .header-main .header-sachvideo {
+      transform: translate(500%, -480%);
+      width: 200px;
+      transition: all 0.6s ease-in-out; }
+      @media (max-width: 1280px) {
+        header .header-main .header-user, header .header-main .header-sachvideo {
+          transform: translate(390%, -480%); } }
+      header .header-main .header-user a.nav-link, header .header-main .header-sachvideo a.nav-link {
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+        padding: 0.5rem; }
+    header .header-main .header-user-succsess {
+      transform: translate(85%, -370%);
+      transition: transform 0.6s; }
+      header .header-main .header-user-succsess a.nav-link {
+        padding: 0.3rem;
+        color: white; }
+      header .header-main .header-user-succsess i {
+        color: white; }
+    header .header-main .header-sachvideo {
+      transform: translate(340%, -380%); }
+    header .header-main .header-form-search-responsive {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 7rem;
+      background-color: #32445e;
+      display: none; }
+      @media (min-width: 1160px) {
+        header .header-main .header-form-search-responsive {
+          display: none !important; } }
+      header .header-main .header-form-search-responsive form.form-inline {
+        justify-content: center;
+        height: 45px; }
+        header .header-main .header-form-search-responsive form.form-inline .thoat-form {
+          font-size: 16px;
+          color: #cad7ea; }
+        header .header-main .header-form-search-responsive form.form-inline .form-group {
+          width: 85%;
+          margin: 0; }
+          @media (max-width: 900px) {
+            header .header-main .header-form-search-responsive form.form-inline .form-group {
+              width: 70%; } }
+          @media (max-width: 800px) {
+            header .header-main .header-form-search-responsive form.form-inline .form-group {
+              width: 60%; } }
+          header .header-main .header-form-search-responsive form.form-inline .form-group input#header-search-menu-responsive {
+            width: 100%;
+            border-radius: 25px;
+            border: 1px solid #5f7494;
+            background-color: #5f749400;
+            height: 30px; }
+        header .header-main .header-form-search-responsive form.form-inline button {
+          padding: 0.2rem 0.5rem;
+          border-radius: 25px;
+          background-color: #21b685;
+          border: 1px solid #21b685;
+          font-size: 15px; }
+
+.anime-header-main {
+  margin-top: -3.5rem; }
+
+.anime-header-search-transform {
+  transform: translate(445%, -100%) !important; }
+
+.anime-header-search-width {
+  width: 210px !important; }
+
+.anime-header-user {
+  transform: translate(500%, -430%) !important;
+  width: 200px !important; }
+  @media (max-width: 1176px) {
+    .anime-header-user {
+      transform: translate(390%, -430%) !important; } }
+
+@media (max-width: 1280px) {
+  .header-sachvideo {
+    visibility: hidden !important; }
+  .header-user {
+    transform: translate(430%, -480%); } }
+
+@media (max-width: 1300px) {
+  .header-user-succsess .name {
+    display: none; } }
+
+@media (max-width: 1200px) {
+  .anime-header-search-transform {
+    transform: translate(447%, -95%) !important; }
+  .anime-header-search-width {
+    width: 200px !important; } }
+
+@media (max-width: 1176px) {
+  .header-form-sub-search {
+    display: block !important; }
+  .icon-dangnhap-dangky i {
+    font-size: 23px !important; } }
+
+@media (max-width: 1000px) {
+  .header-search, .header-user, .header-sachvideo, .header-user-succsess {
+    display: none !important; }
+  .header-sub-user, .header-sub-search {
+    display: block !important; }
+  .hide-header-list {
+    visibility: unset !important; }
+  .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .before-header-list {
+    visibility: unset !important; }
+  .anime-header-main {
+    margin-top: 0rem !important; }
+  .logo-menu a {
+    transform: translate(10px, 0px) !important; }
+  .header-list {
+    margin-left: 0px !important;
+    margin-top: 1.5rem !important; } }
+
+.user-scroll-window {
+  transform: translate(390%, -420%) !important; }
+
+@media (max-width: 1000px) {
+  .anime-header-search-transform {
+    transform: translate(260%, -90%) !important; }
+  .user-scroll-window {
+    transform: translate(400%, -320%) !important; } }
+
+
+
+
+/*========================================== MENU CSS ===============================================*/
+
+/*========================================= FORM ĐĂNG NHẬP ĐĂNG KÝ =====================================*/
+
+/*=========================================FORM SHOW PROFILE USER ================================================== */
+.formlogin .from-dn .tab-panner, .formlogin .from-dk .tab-panner2,.formlogin .from-edit-comment .tab-panner {
+  background: #1ab188;
+  font-size: 20px;
+  border-radius: 4px; }
+
+.formlogin .from-dn .tab-content form input, .formlogin .from-dk .tab-content2 form input {
+  background: none;
+  border: 1px solid #a0b3b0;
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: white;
+  padding-left: 0.5rem }
+  .formlogin .from-dn .tab-content form input:focus, .formlogin .from-dk .tab-content2 form input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #1ab188; }
+
+.formlogin .from-dn .tab-panner ul, .formlogin .from-dk .tab-panner2 ul {
+  list-style-type: none;
+  padding: 0; }
+  .formlogin .from-dn .tab-panner ul li, .formlogin .from-dk .tab-panner2 ul li {
+    text-align: center; }
+    .formlogin .from-dn .tab-panner ul li a, .formlogin .from-dk .tab-panner2 ul li a {
+      color: #ffffff; }
+      .formlogin .from-dn .tab-panner ul li a:hover, .formlogin .from-dk .tab-panner2 ul li a:hover {
+        text-decoration: none; }
+
+.formlogin .from-dn .tab-content .taikhoan, .formlogin .from-dk .tab-content2 form .taikhoan {
+  text-align: right;
+  margin-top: 10px; }
+  .formlogin .from-dn .tab-content .taikhoan a, .formlogin .from-dk .tab-content2 form .taikhoan a {
+    color: #179b77; }
+    .formlogin .from-dn .tab-content .taikhoan a:hover, .formlogin .from-dk .tab-content2 form .taikhoan a:hover {
+      text-decoration: none;
+      color: #179b77bf; }
+
+.formlogin .from-dn .tab-content form button, .formlogin .from-dk .tab-content2 form button {
+  width: 100%;
+  background: #1ab188;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.3s; }
+  .formlogin .from-dn .tab-content form button:hover, .formlogin .from-dk .tab-content2 form button:hover {
+    background-color: #1ab188de; }
+  .formlogin .from-dn .tab-content form button:focus, .formlogin .from-dk .tab-content2 form button:focus {
+    box-shadow: none; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.kkk {
+  position: fixed;
+  z-index: 1; }
+
+.momo {
+  background: rgba(0, 0, 0, 0.52);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 11;
+  opacity: 0;
+  visibility: hidden; }
+
+.momo.changemomo {
+  opacity: 1;
+  visibility: visible; }
+
+.formlogin .from-dn.change {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0.3s; }
+.formlogin .from-edit-comment.change {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0.3s; }
+.formlogin .from-dn {
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+  margin: 0 auto;
+  width: 450px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  margin-top: -203px;
+  margin-left: -225px;
+  transform: scale(0.3);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 12; }
+.formlogin .from-edit-comment {
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+  margin: 0 auto;
+  width: 450px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  margin-top: -203px;
+  margin-left: -225px;
+  transform: scale(0.3);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 12; }
+  @media (max-width: 450px) {
+    .formlogin .from-dn {
+      width: 400px; } }
+  @media (max-width: 375px) {
+    .formlogin .from-dn {
+      width: 350px; } }
+  @media (max-width: 320px) {
+    .formlogin .from-dn {
+      width: 310px; } }
+  @media (max-width: 450px) {
+    .formlogin .from-dn {
+      margin-left: -200px; } }
+  @media (max-width: 375px) {
+    .formlogin .from-dn {
+      margin-left: -175px !important; } }
+  @media (max-width: 320px) {
+    .formlogin .from-dn {
+      margin-left: -155px !important; } }
+  .formlogin .from-dn .tab-content form .forgot {
+    margin-bottom: 20px; }
+    .formlogin .from-dn .tab-content form .forgot a {
+      color: #179b77;
+      transition: all 0.3 ease-in-out; }
+      .formlogin .from-dn .tab-content form .forgot a:hover {
+        text-decoration: none;
+        color: #179b77bf; }
+  .formlogin .from-dn .tab-content .loginfacebook,
+  .formlogin .from-dn .tab-content .logingoogle {
+    text-align: center;
+    padding: 0.3rem 0;
+    position: relative;
+    transition: 0.3s; }
+    .formlogin .from-dn .tab-content .loginfacebook:hover,
+    .formlogin .from-dn .tab-content .logingoogle:hover {
+      transition: 0.3s; }
+    .formlogin .from-dn .tab-content .loginfacebook a,
+    .formlogin .from-dn .tab-content .logingoogle a {
+      color: #ffffff; }
+      .formlogin .from-dn .tab-content .loginfacebook a:hover,
+      .formlogin .from-dn .tab-content .logingoogle a:hover {
+        text-decoration: none; }
+  .formlogin .from-dn .tab-content .logingoogle {
+    background-color: #d9534f;
+    border-color: #ac2925; }
+    .formlogin .from-dn .tab-content .logingoogle:hover {
+      background-color: #a9120de8; }
+  .formlogin .from-dn .tab-content .loginfacebook {
+    margin: 15px 0;
+    background-color: #3b5998;
+    border-color: #365086; }
+    .formlogin .from-dn .tab-content .loginfacebook:hover {
+      background-color: #4267b2; }
+
+  
+.formlogin .from-dk.change1 {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s;
+  margin-left: 0; }
+.formlogin .from-dk {
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+  margin: 0 auto;
+  width: 450px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 12;
+  margin-left: 100px; }
+  @media (max-width: 450px) {
+    .formlogin .from-dk {
+      width: 400px; } }
+  @media (max-width: 375px) {
+    .formlogin .from-dk {
+      width: 350px; } }
+  @media (max-width: 320px) {
+    .formlogin .from-dk {
+      width: 310px; } }
+
+figcaption .box-n a {
+  color: white
+}
+
+/* ==================================================== PHẦN PROFILE PLAYLIST ... ================================================== */
+@media (max-width: 991.98px) {
+  .libary .container .row .box-left div#v-pills-tab {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between; } }
+.libary .container .row .box-left div#v-pills-tab .nav-link.active {
+  background-color: #efefef;
+  color: #65509e;
+  border-left: 5px solid #65509e;
+  font-weight: 500; }
+.libary .container .row .box-left div#v-pills-tab .nav-link {
+  color: white; }
+.libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list .title {
+    color: white;
+    font-size: 24px;
+    font-weight: 700; }
+    .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list .title:hover {
+      color: #65509e;
+      cursor: pointer; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button {
+    background: #65509e;
+    color: #efefef;
+    border-radius: 5px; }
+    .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover {
+      background: #efefef;
+      color: #65509e; }
+.libary .container .row .box-right .tab-content .tab-pane .list-libary .slider-libary {
+  overflow: hidden; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .slider-libary img {
+    max-width: 100%; }
+    @media (max-width: 991.98px) {
+      .libary .container .row .box-right .tab-content .tab-pane .list-libary .slider-libary img {
+        width: 100%;
+        object-fit: cover; } }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .slider-libary ul.slick-dots {
+    position: absolute;
+    bottom: 0 !important; }
+    .libary .container .row .box-right .tab-content .tab-pane .list-libary .slider-libary ul.slick-dots li.slick-active button::before {
+      color: #65509e;
+      font-size: 10px; }
+.libary .container .row .box-right .tab-content .tab-pane .list-libary .slider-libary .slick-slide {
+  margin-bottom: 0;
+  padding-top: 10px; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .slider-libary .slick-slide:focus {
+    outline: none; }
+.libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul {
+  list-style: none; }
+  @media (max-width: 991.98px) {
+    .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li {
+    padding: 10px;
+    position: relative; }
+    .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll {
+      display: flex; }
+      .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figure {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 0; }
+        .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figure img {
+          width: 45px;
+          height: 45px; }
+        .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figure::before {
+          display: block;
+          content: '';
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #32323d66;
+          position: absolute;
+          opacity: 0;
+          z-index: 1;
+          visibility: hidden; }
+        .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figure::after {
+          display: block;
+          content: "\f144";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #65509e;
+          font-size: 1.5em;
+          z-index: 1;
+          opacity: 0;
+          visibility: hidden; }
+      .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption {
+        display: inline-block;
+        flex: 1;
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-between;
+        }
+        figcaption a {
+            color: white !important; 
+         }
+        .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .box-n .titile a, .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .box-n .titile .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .list-baihat ul li .card-samll figcaption .box-n .titile button, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .box-n .titile button {
+          color: white;
+          font-weight: 700; }
+          .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .box-n .titile a:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .box-n .titile .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .list-baihat ul li .card-samll figcaption .box-n .titile button:hover, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .box-n .titile button:hover {
+            text-decoration: none; }
+        .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .box-n .actit a, .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .box-n .actit .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .list-baihat ul li .card-samll figcaption .box-n .actit button, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .box-n .actit button {
+          color: white; }
+          @media (min-width: 992px) {
+            .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .box-n .actit a:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .box-n .actit .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .list-baihat ul li .card-samll figcaption .box-n .actit button:hover, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .box-n .actit button:hover {
+              text-decoration: none;
+              color: #65509e; } }
+        .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .kn a, .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .kn .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .list-baihat ul li .card-samll figcaption .kn button, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .kn button {
+          color: #5c5c5e;
+          opacity: 0; }
+          .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .kn a:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .kn .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .list-baihat ul li .card-samll figcaption .kn button:hover, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .kn button:hover {
+            color: #65509e; }
+        .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .kn a i#bbb, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .list-baihat ul li .card-samll figcaption .kn button i#bbb, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li .card-samll figcaption .kn button i#bbb {
+          margin-right: 7px; }
+    @media (min-width: 992px) {
+      .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li:hover {
+        background: #dedede; }
+        .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li:hover .card-samll figure::before {
+          opacity: 1;
+          visibility: visible; }
+        .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li:hover .card-samll figure::after {
+          opacity: 1;
+          visibility: visible; }
+        .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li:hover .card-samll figcaption .box-n .titile a, .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li:hover .card-samll figcaption .box-n .titile .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .list-baihat ul li:hover .card-samll figcaption .box-n .titile button, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li:hover .card-samll figcaption .box-n .titile button {
+          color: #65509e; }
+        .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li:hover .card-samll figcaption .kn a, .libary .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li:hover .card-samll figcaption .kn .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .list-baihat ul li:hover .card-samll figcaption .kn button, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .list-baihat ul li:hover .card-samll figcaption .kn button {
+          opacity: 1; } }
+.libary .container .row .box-right .tab-content .tab-pane .list-libary .playlist .title {
+  color: white;
+  font-size: 24px;
+  font-weight: 700; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .playlist .title:hover {
+    color: white;
+    cursor: pointer; }
+.libary .container .row .box-right .tab-content .tab-pane .list-libary .viewsall {
+  text-align: center; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .viewsall a, .libary .container .row .box-right .tab-content .tab-pane .list-libary .viewsall .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .viewsall button, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .viewsall button {
+    color: #65509e;
+    font-weight: 500; }
+    .libary .container .row .box-right .tab-content .tab-pane .list-libary .viewsall a:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .viewsall .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .viewsall button:hover, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .viewsall button:hover {
+      text-decoration: none; }
+.libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button:hover, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button:hover {
+  text-decoration: none; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a:hover .card-playlist figure:hover::before, .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop .header-list a button:hover .card-playlist figure:hover::before, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button:hover .card-playlist figure:hover::before, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button:hover .card-playlist figure:hover::before {
+    opacity: 1;
+    visibility: visible; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a:hover .card-playlist figure:hover::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop .header-list a button:hover .card-playlist figure:hover::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button:hover .card-playlist figure:hover::after, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button:hover .card-playlist figure:hover::after {
+    opacity: 1;
+    visibility: visible; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a:hover .card-playlist figure:hover .edit, .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop .header-list a button:hover .card-playlist figure:hover .edit, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button:hover .card-playlist figure:hover .edit, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button:hover .card-playlist figure:hover .edit {
+    opacity: 1; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a:hover .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop .header-list a button:hover .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button:hover .card-playlist figure img, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button:hover .card-playlist figure img {
+    transform: scale(1.2); }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a:hover .card-playlist .name-playlist:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop .header-list a button:hover .card-playlist .name-playlist:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button:hover .card-playlist .name-playlist:hover, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button:hover .card-playlist .name-playlist:hover {
+    color: white; }
+.libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a .card-playlist figure, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button .card-playlist figure, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button .card-playlist figure {
+  position: relative;
+  overflow: hidden; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a .card-playlist figure::before, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button .card-playlist figure::before, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button .card-playlist figure::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #32323d66;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a .card-playlist figure::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button .card-playlist figure::after, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button .card-playlist figure::after {
+    display: block;
+    content: "\f144";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #65509e;
+    font-size: 1.5em;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a .card-playlist figure::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button .card-playlist figure::after, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button .card-playlist figure::after {
+    font-size: 3rem; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a .card-playlist figure .edit, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button .card-playlist figure .edit, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button .card-playlist figure .edit {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    opacity: 0; }
+    .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a .card-playlist figure .edit i, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button .card-playlist figure .edit i, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button .card-playlist figure .edit i {
+      color: #fff; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button .card-playlist figure img, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button .card-playlist figure img {
+    transform: scale(1);
+    transition: all 0.8s; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button .card-playlist figure img, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button .card-playlist figure img {
+        width: 100%; } }
+.libary .container .row .box-right .tab-content .tab-pane .list-libary .oop a .card-playlist .name-playlist, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .oop button .card-playlist .name-playlist, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .oop button .card-playlist .name-playlist {
+  color: white;
+  font-weight: 600; }
+.libary .container .row .box-right .tab-content .tab-pane .list-libary .ooc a:hover .card-playlist figure::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .ooc .header-list a button:hover .card-playlist figure::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .ooc button:hover .card-playlist figure::after, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .ooc button:hover .card-playlist figure::after {
+  opacity: 1; }
+.libary .container .row .box-right .tab-content .tab-pane .list-libary .ooc a:hover .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .ooc .header-list a button:hover .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .ooc button:hover .card-playlist figure img, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .ooc button:hover .card-playlist figure img {
+  transform: scale(1.2); }
+.libary .container .row .box-right .tab-content .tab-pane .list-libary .ooc a .card-playlist figure, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .ooc button .card-playlist figure, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .ooc button .card-playlist figure {
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .ooc a .card-playlist figure::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .ooc button .card-playlist figure::after, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .ooc button .card-playlist figure::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5c5c5e7a;
+    z-index: 1;
+    display: block;
+    content: '';
+    opacity: 0; }
+  .libary .container .row .box-right .tab-content .tab-pane .list-libary .ooc a .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .ooc button .card-playlist figure img, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .ooc button .card-playlist figure img {
+    border-radius: 50%;
+    transition: all 0.8s;
+    object-fit: cover; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .libary .container .row .box-right .tab-content .tab-pane .list-libary .ooc a .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .ooc button .card-playlist figure img, .libary .music .header-list a .container .row .box-right .tab-content .tab-pane .list-libary .ooc button .card-playlist figure img {
+        width: 100%; } }
+@media (max-width: 991.98px) {
+  .libary .hiiden-mobi {
+    display: none; } }
+.libary .hiiden-mobi .heading {
+  margin-bottom: 1rem; }
+  .libary .hiiden-mobi .heading a, .libary .hiiden-mobi .heading .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .hiiden-mobi .heading button, .libary .hiiden-mobi .heading .music .header-list a button, .libary .music .header-list a .hiiden-mobi .heading button {
+    color: white;
+    font-size: 24px;
+    font-weight: 700; }
+    .libary .hiiden-mobi .heading a:hover, .libary .hiiden-mobi .heading .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .hiiden-mobi .heading button:hover, .libary .hiiden-mobi .heading .music .header-list a button:hover, .libary .music .header-list a .hiiden-mobi .heading button:hover {
+      color: #65509e;
+      cursor: pointer; }
+    .libary .hiiden-mobi .heading a:hover, .libary .hiiden-mobi .heading .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .hiiden-mobi .heading button:hover, .libary .hiiden-mobi .heading .music .header-list a button:hover, .libary .music .header-list a .hiiden-mobi .heading button:hover {
+      text-decoration: none; }
+.libary .hiiden-mobi .ul-song {
+  border-bottom: 1px solid #efefef;
+  list-style-type: none;
+  padding: 0; }
+  .libary .hiiden-mobi .ul-song a, .libary .hiiden-mobi .ul-song .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .hiiden-mobi .ul-song button, .libary .hiiden-mobi .ul-song .music .header-list a button, .libary .music .header-list a .hiiden-mobi .ul-song button {
+    color: white; }
+    .libary .hiiden-mobi .ul-song a:hover, .libary .hiiden-mobi .ul-song .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .hiiden-mobi .ul-song button:hover, .libary .hiiden-mobi .ul-song .music .header-list a button:hover, .libary .music .header-list a .hiiden-mobi .ul-song button:hover {
+      color: #65509e;
+      text-decoration: none; }
+  .libary .hiiden-mobi .ul-song li {
+    padding: 10px;
+    position: relative; }
+    .libary .hiiden-mobi .ul-song li .card-samll {
+      display: flex; }
+      .libary .hiiden-mobi .ul-song li .card-samll figure {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 0; }
+        .libary .hiiden-mobi .ul-song li .card-samll figure img {
+          width: 40px;
+          height: 100%; }
+        .libary .hiiden-mobi .ul-song li .card-samll figure::before {
+          display: block;
+          content: '';
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #32323d66;
+          position: absolute;
+          opacity: 0;
+          z-index: 1;
+          visibility: hidden; }
+        .libary .hiiden-mobi .ul-song li .card-samll figure::after {
+          display: block;
+          content: "\f144";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #65509e;
+          font-size: 1.5em;
+          z-index: 1;
+          opacity: 0;
+          visibility: hidden; }
+      .libary .hiiden-mobi .ul-song li .card-samll figcaption {
+        display: inline-block;
+        flex: 1;
+        padding-left: 10px; }
+        .libary .hiiden-mobi .ul-song li .card-samll figcaption .box-n .titile a, .libary .hiiden-mobi .ul-song li .card-samll figcaption .box-n .titile .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .hiiden-mobi .ul-song li .card-samll figcaption .box-n .titile button, .libary .hiiden-mobi .ul-song li .card-samll figcaption .box-n .titile .music .header-list a button, .libary .music .header-list a .hiiden-mobi .ul-song li .card-samll figcaption .box-n .titile button {
+          color: #32323d;
+          font-size: 14px; }
+          .libary .hiiden-mobi .ul-song li .card-samll figcaption .box-n .titile a:hover, .libary .hiiden-mobi .ul-song li .card-samll figcaption .box-n .titile .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .hiiden-mobi .ul-song li .card-samll figcaption .box-n .titile button:hover, .libary .hiiden-mobi .ul-song li .card-samll figcaption .box-n .titile .music .header-list a button:hover, .libary .music .header-list a .hiiden-mobi .ul-song li .card-samll figcaption .box-n .titile button:hover {
+            text-decoration: none; }
+        .libary .hiiden-mobi .ul-song li .card-samll figcaption .box-n .actit a, .libary .hiiden-mobi .ul-song li .card-samll figcaption .box-n .actit .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .hiiden-mobi .ul-song li .card-samll figcaption .box-n .actit button, .libary .hiiden-mobi .ul-song li .card-samll figcaption .box-n .actit .music .header-list a button, .libary .music .header-list a .hiiden-mobi .ul-song li .card-samll figcaption .box-n .actit button {
+          color: #32323d47;
+          font-size: 12px; }
+          @media (min-width: 992px) {
+            .libary .hiiden-mobi .ul-song li .card-samll figcaption .box-n .actit a:hover, .libary .hiiden-mobi .ul-song li .card-samll figcaption .box-n .actit .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .hiiden-mobi .ul-song li .card-samll figcaption .box-n .actit button:hover, .libary .hiiden-mobi .ul-song li .card-samll figcaption .box-n .actit .music .header-list a button:hover, .libary .music .header-list a .hiiden-mobi .ul-song li .card-samll figcaption .box-n .actit button:hover {
+              text-decoration: none;
+              color: #65509e; } }
+    @media (min-width: 992px) {
+      .libary .hiiden-mobi .ul-song li:hover {
+        background: #dedede; }
+        .libary .hiiden-mobi .ul-song li:hover .card-samll figure::before {
+          opacity: 1;
+          visibility: visible; }
+        .libary .hiiden-mobi .ul-song li:hover .card-samll figure::after {
+          opacity: 1;
+          visibility: visible; }
+        .libary .hiiden-mobi .ul-song li:hover .card-samll figcaption .box-n .titile a, .libary .hiiden-mobi .ul-song li:hover .card-samll figcaption .box-n .titile .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .hiiden-mobi .ul-song li:hover .card-samll figcaption .box-n .titile button, .libary .hiiden-mobi .ul-song li:hover .card-samll figcaption .box-n .titile .music .header-list a button, .libary .music .header-list a .hiiden-mobi .ul-song li:hover .card-samll figcaption .box-n .titile button {
+          color: #65509e; } }
+.libary .music .header-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .libary .music .header-list .title {
+    color: #32323d;
+    font-size: 24px;
+    font-weight: 700; }
+    .libary .music .header-list .title:hover {
+      color: #65509e;
+      cursor: pointer; }
+  .libary .music .header-list a, .libary .music .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .music .header-list a button, .libary .music .header-list a button {
+    background: #65509e;
+    color: #efefef;
+    border-radius: 5px; }
+    .libary .music .header-list a:hover, .libary .music .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .music .header-list a button:hover, .libary .music .header-list a button:hover {
+      background: #efefef;
+      color: #65509e; }
+.libary .music .list-baihat ul {
+  list-style: none; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .libary .music .list-baihat ul {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .libary .music .list-baihat ul li .card-samll figcaption .box-n {
+        padding-right: 7px; }
+      .libary .music .list-baihat ul li .card-samll figcaption .time {
+        padding-right: 7px; } }
+  .libary .music .list-baihat ul li {
+    padding: 10px;
+    position: relative; }
+    .libary .music .list-baihat ul li .card-samll {
+      display: flex; }
+      .libary .music .list-baihat ul li .card-samll figure {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 0; }
+        .libary .music .list-baihat ul li .card-samll figure img {
+          width: 45px;
+          height: 45px; }
+        .libary .music .list-baihat ul li .card-samll figure::before {
+          display: block;
+          content: '';
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #32323d66;
+          position: absolute;
+          opacity: 0;
+          z-index: 1;
+          visibility: hidden; }
+        .libary .music .list-baihat ul li .card-samll figure::after {
+          display: block;
+          content: "\f144";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #65509e;
+          font-size: 1.5em;
+          z-index: 1;
+          opacity: 0;
+          visibility: hidden; }
+      .libary .music .list-baihat ul li .card-samll figcaption {
+        display: inline-block;
+        flex: 1;
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-between; }
+        .libary .music .list-baihat ul li .card-samll figcaption .box-n .titile a, .libary .music .list-baihat ul li .card-samll figcaption .box-n .titile .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .music .list-baihat ul li .card-samll figcaption .box-n .titile button, .libary .music .list-baihat ul li .card-samll figcaption .box-n .titile .header-list a button, .libary .music .header-list a .list-baihat ul li .card-samll figcaption .box-n .titile button {
+          color: #32323d;
+          font-weight: 700; }
+          .libary .music .list-baihat ul li .card-samll figcaption .box-n .titile a:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .music .list-baihat ul li .card-samll figcaption .box-n .titile button:hover, .libary .music .list-baihat ul li .card-samll figcaption .box-n .titile .header-list a button:hover, .libary .music .header-list a .list-baihat ul li .card-samll figcaption .box-n .titile button:hover {
+            text-decoration: none; }
+        .libary .music .list-baihat ul li .card-samll figcaption .box-n .actit a, .libary .music .list-baihat ul li .card-samll figcaption .box-n .actit .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .music .list-baihat ul li .card-samll figcaption .box-n .actit button, .libary .music .list-baihat ul li .card-samll figcaption .box-n .actit .header-list a button, .libary .music .header-list a .list-baihat ul li .card-samll figcaption .box-n .actit button {
+          color: #32323d47; }
+          @media (min-width: 992px) {
+            .libary .music .list-baihat ul li .card-samll figcaption .box-n .actit a:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .music .list-baihat ul li .card-samll figcaption .box-n .actit button:hover, .libary .music .list-baihat ul li .card-samll figcaption .box-n .actit .header-list a button:hover, .libary .music .header-list a .list-baihat ul li .card-samll figcaption .box-n .actit button:hover {
+              text-decoration: none;
+              color: #65509e; } }
+        .libary .music .list-baihat ul li .card-samll figcaption .kn a, .libary .music .list-baihat ul li .card-samll figcaption .kn .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .music .list-baihat ul li .card-samll figcaption .kn button, .libary .music .list-baihat ul li .card-samll figcaption .kn .header-list a button, .libary .music .header-list a .list-baihat ul li .card-samll figcaption .kn button {
+          color: #5c5c5e; }
+          .libary .music .list-baihat ul li .card-samll figcaption .kn a:hover, .libary .music .list-baihat ul li .card-samll figcaption .kn .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .music .list-baihat ul li .card-samll figcaption .kn button:hover, .libary .music .list-baihat ul li .card-samll figcaption .kn .header-list a button:hover, .libary .music .header-list a .list-baihat ul li .card-samll figcaption .kn button:hover {
+            color: #65509e; }
+        .libary .music .list-baihat ul li .card-samll figcaption .kn a i#bbb, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .music .list-baihat ul li .card-samll figcaption .kn button i#bbb, .libary .music .header-list a .list-baihat ul li .card-samll figcaption .kn button i#bbb {
+          margin-right: 7px; }
+    @media (min-width: 992px) {
+      .libary .music .list-baihat ul li:hover {
+        background: #dedede; }
+        .libary .music .list-baihat ul li:hover .card-samll figure::before {
+          opacity: 1;
+          visibility: visible; }
+        .libary .music .list-baihat ul li:hover .card-samll figure::after {
+          opacity: 1;
+          visibility: visible; }
+        .libary .music .list-baihat ul li:hover .card-samll figcaption .box-n .titile a, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .music .list-baihat ul li:hover .card-samll figcaption .box-n .titile button, .libary .music .list-baihat ul li:hover .card-samll figcaption .box-n .titile .header-list a button, .libary .music .header-list a .list-baihat ul li:hover .card-samll figcaption .box-n .titile button {
+          color: #65509e; } }
+.libary .playlist2 .oop a:hover, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button:hover, .libary .playlist2 .oop .music .header-list a button:hover, .libary .music .header-list a .playlist2 .oop button:hover {
+  text-decoration: none; }
+  .libary .playlist2 .oop a:hover .card-playlist figure:hover::before, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure:hover::before, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button:hover .card-playlist figure:hover::before, .libary .playlist2 .oop .music .header-list a button:hover .card-playlist figure:hover::before, .libary .music .header-list a .playlist2 .oop button:hover .card-playlist figure:hover::before {
+    opacity: 1;
+    visibility: visible; }
+  .libary .playlist2 .oop a:hover .card-playlist figure:hover::after, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure:hover::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button:hover .card-playlist figure:hover::after, .libary .playlist2 .oop .music .header-list a button:hover .card-playlist figure:hover::after, .libary .music .header-list a .playlist2 .oop button:hover .card-playlist figure:hover::after {
+    opacity: 1;
+    visibility: visible; }
+  .libary .playlist2 .oop a:hover .card-playlist figure:hover .edit, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure:hover .edit, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button:hover .card-playlist figure:hover .edit, .libary .playlist2 .oop .music .header-list a button:hover .card-playlist figure:hover .edit, .libary .music .header-list a .playlist2 .oop button:hover .card-playlist figure:hover .edit {
+    opacity: 1; }
+  .libary .playlist2 .oop a:hover .card-playlist figure img, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button:hover .card-playlist figure img, .libary .playlist2 .oop .music .header-list a button:hover .card-playlist figure img, .libary .music .header-list a .playlist2 .oop button:hover .card-playlist figure img {
+    transform: scale(1.2); }
+  .libary .playlist2 .oop a:hover .card-playlist .name-playlist:hover, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist .name-playlist:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button:hover .card-playlist .name-playlist:hover, .libary .playlist2 .oop .music .header-list a button:hover .card-playlist .name-playlist:hover, .libary .music .header-list a .playlist2 .oop button:hover .card-playlist .name-playlist:hover {
+    color: #65509e; }
+.libary .playlist2 .oop a .card-playlist figure, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button .card-playlist figure, .libary .music .header-list a .playlist2 .oop button .card-playlist figure {
+  position: relative;
+  overflow: hidden; }
+  .libary .playlist2 .oop a .card-playlist figure::before, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure::before, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button .card-playlist figure::before, .libary .music .header-list a .playlist2 .oop button .card-playlist figure::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #32323d66;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden; }
+  .libary .playlist2 .oop a .card-playlist figure::after, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button .card-playlist figure::after, .libary .music .header-list a .playlist2 .oop button .card-playlist figure::after {
+    display: block;
+    content: "\f144";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #65509e;
+    font-size: 1.5em;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden; }
+  .libary .playlist2 .oop a .card-playlist figure::after, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button .card-playlist figure::after, .libary .music .header-list a .playlist2 .oop button .card-playlist figure::after {
+    font-size: 3rem; }
+  .libary .playlist2 .oop a .card-playlist figure .edit, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure .edit, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button .card-playlist figure .edit, .libary .music .header-list a .playlist2 .oop button .card-playlist figure .edit {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    opacity: 0; }
+    .libary .playlist2 .oop a .card-playlist figure .edit i, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure .edit i, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button .card-playlist figure .edit i, .libary .music .header-list a .playlist2 .oop button .card-playlist figure .edit i {
+      color: #fff; }
+  .libary .playlist2 .oop a .card-playlist figure img, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button .card-playlist figure img, .libary .music .header-list a .playlist2 .oop button .card-playlist figure img {
+    transform: scale(1);
+    transition: all 0.8s; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .libary .playlist2 .oop a .card-playlist figure img, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button .card-playlist figure img, .libary .music .header-list a .playlist2 .oop button .card-playlist figure img {
+        width: 100%; } }
+.libary .playlist2 .oop a .card-playlist .name-playlist, .libary .playlist2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist .name-playlist, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .playlist2 .oop button .card-playlist .name-playlist, .libary .music .header-list a .playlist2 .oop button .card-playlist .name-playlist {
+  color: #32323d;
+  font-weight: 600; }
+.libary .playlist2 .playlist .title {
+  color: #32323d;
+  font-size: 24px;
+  font-weight: 700; }
+  .libary .playlist2 .playlist .title:hover {
+    color: #65509e;
+    cursor: pointer; }
+.libary .mv2 .playlist .title {
+  color: #32323d;
+  font-size: 24px;
+  font-weight: 700; }
+  .libary .mv2 .playlist .title:hover {
+    color: #65509e;
+    cursor: pointer; }
+.libary .mv2 .oop a:hover, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button:hover, .libary .mv2 .oop .music .header-list a button:hover, .libary .music .header-list a .mv2 .oop button:hover {
+  text-decoration: none; }
+  .libary .mv2 .oop a:hover .card-playlist figure:hover::before, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure:hover::before, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button:hover .card-playlist figure:hover::before, .libary .mv2 .oop .music .header-list a button:hover .card-playlist figure:hover::before, .libary .music .header-list a .mv2 .oop button:hover .card-playlist figure:hover::before {
+    opacity: 1;
+    visibility: visible; }
+  .libary .mv2 .oop a:hover .card-playlist figure:hover::after, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure:hover::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button:hover .card-playlist figure:hover::after, .libary .mv2 .oop .music .header-list a button:hover .card-playlist figure:hover::after, .libary .music .header-list a .mv2 .oop button:hover .card-playlist figure:hover::after {
+    opacity: 1;
+    visibility: visible; }
+  .libary .mv2 .oop a:hover .card-playlist figure:hover .edit, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure:hover .edit, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button:hover .card-playlist figure:hover .edit, .libary .mv2 .oop .music .header-list a button:hover .card-playlist figure:hover .edit, .libary .music .header-list a .mv2 .oop button:hover .card-playlist figure:hover .edit {
+    opacity: 1; }
+  .libary .mv2 .oop a:hover .card-playlist figure img, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button:hover .card-playlist figure img, .libary .mv2 .oop .music .header-list a button:hover .card-playlist figure img, .libary .music .header-list a .mv2 .oop button:hover .card-playlist figure img {
+    transform: scale(1.2); }
+  .libary .mv2 .oop a:hover .card-playlist .name-playlist:hover, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist .name-playlist:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button:hover .card-playlist .name-playlist:hover, .libary .mv2 .oop .music .header-list a button:hover .card-playlist .name-playlist:hover, .libary .music .header-list a .mv2 .oop button:hover .card-playlist .name-playlist:hover {
+    color: #65509e; }
+.libary .mv2 .oop a .card-playlist figure, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button .card-playlist figure, .libary .music .header-list a .mv2 .oop button .card-playlist figure {
+  position: relative;
+  overflow: hidden; }
+  .libary .mv2 .oop a .card-playlist figure::before, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure::before, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button .card-playlist figure::before, .libary .music .header-list a .mv2 .oop button .card-playlist figure::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #32323d66;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden; }
+  .libary .mv2 .oop a .card-playlist figure::after, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button .card-playlist figure::after, .libary .music .header-list a .mv2 .oop button .card-playlist figure::after {
+    display: block;
+    content: "\f144";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #65509e;
+    font-size: 1.5em;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden; }
+  .libary .mv2 .oop a .card-playlist figure::after, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button .card-playlist figure::after, .libary .music .header-list a .mv2 .oop button .card-playlist figure::after {
+    font-size: 3rem; }
+  .libary .mv2 .oop a .card-playlist figure .edit, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure .edit, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button .card-playlist figure .edit, .libary .music .header-list a .mv2 .oop button .card-playlist figure .edit {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    opacity: 0; }
+    .libary .mv2 .oop a .card-playlist figure .edit i, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure .edit i, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button .card-playlist figure .edit i, .libary .music .header-list a .mv2 .oop button .card-playlist figure .edit i {
+      color: #fff; }
+  .libary .mv2 .oop a .card-playlist figure img, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button .card-playlist figure img, .libary .music .header-list a .mv2 .oop button .card-playlist figure img {
+    transform: scale(1);
+    transition: all 0.8s; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .libary .mv2 .oop a .card-playlist figure img, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button .card-playlist figure img, .libary .music .header-list a .mv2 .oop button .card-playlist figure img {
+        width: 100%; } }
+.libary .mv2 .oop a .card-playlist .name-playlist, .libary .mv2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist .name-playlist, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .mv2 .oop button .card-playlist .name-playlist, .libary .music .header-list a .mv2 .oop button .card-playlist .name-playlist {
+  color: #32323d;
+  font-weight: 600; }
+.libary .album2 .playlist .title {
+  color: #32323d;
+  font-size: 24px;
+  font-weight: 700; }
+  .libary .album2 .playlist .title:hover {
+    color: #65509e;
+    cursor: pointer; }
+.libary .album2 .oop a:hover, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button:hover, .libary .album2 .oop .music .header-list a button:hover, .libary .music .header-list a .album2 .oop button:hover {
+  text-decoration: none; }
+  .libary .album2 .oop a:hover .card-playlist figure:hover::before, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure:hover::before, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button:hover .card-playlist figure:hover::before, .libary .album2 .oop .music .header-list a button:hover .card-playlist figure:hover::before, .libary .music .header-list a .album2 .oop button:hover .card-playlist figure:hover::before {
+    opacity: 1;
+    visibility: visible; }
+  .libary .album2 .oop a:hover .card-playlist figure:hover::after, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure:hover::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button:hover .card-playlist figure:hover::after, .libary .album2 .oop .music .header-list a button:hover .card-playlist figure:hover::after, .libary .music .header-list a .album2 .oop button:hover .card-playlist figure:hover::after {
+    opacity: 1;
+    visibility: visible; }
+  .libary .album2 .oop a:hover .card-playlist figure:hover .edit, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure:hover .edit, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button:hover .card-playlist figure:hover .edit, .libary .album2 .oop .music .header-list a button:hover .card-playlist figure:hover .edit, .libary .music .header-list a .album2 .oop button:hover .card-playlist figure:hover .edit {
+    opacity: 1; }
+  .libary .album2 .oop a:hover .card-playlist figure img, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button:hover .card-playlist figure img, .libary .album2 .oop .music .header-list a button:hover .card-playlist figure img, .libary .music .header-list a .album2 .oop button:hover .card-playlist figure img {
+    transform: scale(1.2); }
+  .libary .album2 .oop a:hover .card-playlist .name-playlist:hover, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist .name-playlist:hover, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button:hover .card-playlist .name-playlist:hover, .libary .album2 .oop .music .header-list a button:hover .card-playlist .name-playlist:hover, .libary .music .header-list a .album2 .oop button:hover .card-playlist .name-playlist:hover {
+    color: #65509e; }
+.libary .album2 .oop a .card-playlist figure, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button .card-playlist figure, .libary .music .header-list a .album2 .oop button .card-playlist figure {
+  position: relative;
+  overflow: hidden; }
+  .libary .album2 .oop a .card-playlist figure::before, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure::before, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button .card-playlist figure::before, .libary .music .header-list a .album2 .oop button .card-playlist figure::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #32323d66;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden; }
+  .libary .album2 .oop a .card-playlist figure::after, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button .card-playlist figure::after, .libary .music .header-list a .album2 .oop button .card-playlist figure::after {
+    display: block;
+    content: "\f144";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #65509e;
+    font-size: 1.5em;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden; }
+  .libary .album2 .oop a .card-playlist figure::after, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button .card-playlist figure::after, .libary .music .header-list a .album2 .oop button .card-playlist figure::after {
+    font-size: 3rem; }
+  .libary .album2 .oop a .card-playlist figure .edit, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure .edit, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button .card-playlist figure .edit, .libary .music .header-list a .album2 .oop button .card-playlist figure .edit {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    opacity: 0; }
+    .libary .album2 .oop a .card-playlist figure .edit i, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure .edit i, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button .card-playlist figure .edit i, .libary .music .header-list a .album2 .oop button .card-playlist figure .edit i {
+      color: #fff; }
+  .libary .album2 .oop a .card-playlist figure img, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button .card-playlist figure img, .libary .music .header-list a .album2 .oop button .card-playlist figure img {
+    transform: scale(1);
+    transition: all 0.8s; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .libary .album2 .oop a .card-playlist figure img, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button .card-playlist figure img, .libary .music .header-list a .album2 .oop button .card-playlist figure img {
+        width: 100%; } }
+.libary .album2 .oop a .card-playlist .name-playlist, .libary .album2 .oop .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist .name-playlist, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .album2 .oop button .card-playlist .name-playlist, .libary .music .header-list a .album2 .oop button .card-playlist .name-playlist {
+  color: #32323d;
+  font-weight: 600; }
+.libary .ngesi2 .playlist .title {
+  color: #32323d;
+  font-size: 24px;
+  font-weight: 700; }
+  .libary .ngesi2 .playlist .title:hover {
+    color: #65509e;
+    cursor: pointer; }
+.libary .ngesi2 .ooc a:hover .card-playlist figure::after, .libary .ngesi2 .ooc .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .ngesi2 .ooc button:hover .card-playlist figure::after, .libary .ngesi2 .ooc .music .header-list a button:hover .card-playlist figure::after, .libary .music .header-list a .ngesi2 .ooc button:hover .card-playlist figure::after {
+  opacity: 1; }
+.libary .ngesi2 .ooc a:hover .card-playlist figure img, .libary .ngesi2 .ooc .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button:hover .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .ngesi2 .ooc button:hover .card-playlist figure img, .libary .ngesi2 .ooc .music .header-list a button:hover .card-playlist figure img, .libary .music .header-list a .ngesi2 .ooc button:hover .card-playlist figure img {
+  transform: scale(1.2); }
+.libary .ngesi2 .ooc a .card-playlist figure, .libary .ngesi2 .ooc .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .ngesi2 .ooc button .card-playlist figure, .libary .music .header-list a .ngesi2 .ooc button .card-playlist figure {
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden; }
+  .libary .ngesi2 .ooc a .card-playlist figure::after, .libary .ngesi2 .ooc .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure::after, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .ngesi2 .ooc button .card-playlist figure::after, .libary .music .header-list a .ngesi2 .ooc button .card-playlist figure::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5c5c5e7a;
+    z-index: 1;
+    display: block;
+    content: '';
+    opacity: 0; }
+  .libary .ngesi2 .ooc a .card-playlist figure img, .libary .ngesi2 .ooc .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .ngesi2 .ooc button .card-playlist figure img, .libary .music .header-list a .ngesi2 .ooc button .card-playlist figure img {
+    border-radius: 50%;
+    transition: all 0.8s;
+    object-fit: cover; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .libary .ngesi2 .ooc a .card-playlist figure img, .libary .ngesi2 .ooc .container .row .box-right .tab-content .tab-pane .list-libary .header-list a button .card-playlist figure img, .libary .container .row .box-right .tab-content .tab-pane .list-libary .header-list a .ngesi2 .ooc button .card-playlist figure img, .libary .music .header-list a .ngesi2 .ooc button .card-playlist figure img {
+        width: 100%; } }
+
+
+.info-user {
+  position: relative;
+}
+
+.info-user:hover form {
+  visibility: unset;
+}
+.info-user:hover .edit-image-users-show {
+  visibility: unset;
+}
+.info-user:hover i {
+  visibility: unset;
+}
+.info-user figure img{
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.info-user form {
+  position: absolute;
+  top: 25%;
+  left: 27%;
+  visibility: hidden;
+}
+
+.info-user i {
+    position: absolute;
+    top: 45%;
+    left: 41%;
+    color: white;
+    font-size: 30px;
+    visibility: hidden;
+}
+
+.edit-image-users-show {
+  border: 0 !important;
+  background: #00000082 !important;
+  font-size: 0 !important;
+  border: black !important;
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+  position: absolute;
+  top: 0rem;
+  left: 98px;
+  visibility: hidden;
+}
+
+
+/*=============================== FORM EDIT INFO USER ======================================  */
+
+
+
+.formlogin .user-detail .tab-panner2 {
+  background: #1ab188;
+  font-size: 20px;
+  border-radius: 4px; }
+
+.formlogin .user-detail .tab-content2 form input {
+  background: none;
+  border: 1px solid #a0b3b0;
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: white;
+  padding-left: 0.5rem }
+.formlogin .user-detail .tab-content2 form input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #1ab188; }
+
+.formlogin .user-detail .tab-panner2 ul {
+  list-style-type: none;
+  padding: 0; }
+  .formlogin .from-dn .tab-panner ul li, .formlogin .user-detail .tab-panner2 ul li {
+    text-align: center; }
+    .formlogin .from-dn .tab-panner ul li a, .formlogin .user-detail .tab-panner2 ul li a {
+      color: #ffffff; }
+      .formlogin .from-dn .tab-panner ul li a:hover, .formlogin .user-detail .tab-panner2 ul li a:hover {
+        text-decoration: none; }
+
+ .formlogin .user-detail .tab-content2 form .taikhoan {
+  text-align: right;
+  margin-top: 10px; }
+.formlogin .user-detail .tab-content2 form .taikhoan a {
+    color: #179b77; }
+.formlogin .user-detail .tab-content2 form .taikhoan a:hover {
+      text-decoration: none;
+      color: #179b77bf; }
+
+.formlogin .user-detail .tab-content2 form button {
+  width: 100%;
+  background: #1ab188;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.3s; }
+.formlogin .user-detail .tab-content2 form button:hover {
+    background-color: #1ab188de; }
+.formlogin .user-detail .tab-content2 form button:focus {
+    box-shadow: none; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+  
+.formlogin .user-detail.change1 {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s;
+  margin-left: 0; }
+.formlogin .user-detail {
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+  margin: 0 auto;
+  width: 450px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 12;
+  margin-left: 100px; }
+  @media (max-width: 450px) {
+    .formlogin .user-detail {
+      width: 400px; } }
+  @media (max-width: 375px) {
+    .formlogin .user-detail {
+      width: 350px; } }
+  @media (max-width: 320px) {
+    .formlogin .user-detail {
+      width: 310px; } }
+
+
+
+
+
+
+
+
+
+/*FORM UPDATE BÌNH LUẬN*/
+
+.updatebinhluan {
+      background: rgba(19, 35, 47, 0.9);
+      padding: 40px;
+      margin: 0 auto;
+      width: 450px;
+      border-radius: 4px;
+      box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.3s;
+      margin-top: -203px;
+      margin-left: -225px;
+      transform: scale(0.3);
+      opacity: 0;
+      visibility: hidden;
+      z-index: 12;
+}
